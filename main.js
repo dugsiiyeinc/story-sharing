@@ -286,7 +286,7 @@ updatedUsers.username = usernameInput
 updatedUsers.bio = bio
 localStorage.setItem("currentUser",JSON.stringify(updatedUsers))
 localStorage.setItem('users', JSON.stringify(checkDataInputs))
-
+window.location.href = 'home.html'
 
   }else{
     return;
