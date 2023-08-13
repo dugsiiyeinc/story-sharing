@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600&display=swap');
+
+
+:root{
+    --primary-color:#131621;
+    --secondry-color:#0677E8;
+    --midd-color: #292C35;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 26%;
+    margin: 30px auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.container h1{
+    color: white;
+}
+
+.container p{
+    color: #8C8C8C;
+}
+
+.container-login{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#form >*{
+    margin-bottom: 10px;
+}
+
+.container-login input{
+    width: 320px;
+    padding: 14px 40px;
+    border-radius: 7px;
+    background-color: #292C35;
+    border: none;
+    outline: none;
+    color: #ACADB9;
+}
+
+.container-login input[type=text]:focus{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.container-login input[type=email]:focus{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.container-login input[type=password]:focus{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.container-login button{
+     width: 320px;
+    padding: 14px;
+    border-radius: 7px;
+    background-color: var(--secondry-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container-login button a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-login h4{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 17px;
+}
+
+.container-login a{
+    text-decoration: none;
+    color: #0677E8;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sections-form{
+    position: relative;
+}
+
+.container-login svg{
+    width: 25px;
+    height: 25px;
+    color: #0677E8;
+    position: absolute;
+    left: 3px;
+    top: 8px;
+}
+
+
+.sections-form.error input{
+    border: 1px solid red;
+}
+
+
+.sections-form.success input{
+    border: 1px solid lightgreen;
+}
+
+.sections-form small{
+    color: red;
+    display: block;
+    letter-spacing: 2px;
+    visibility: hidden;
+}
+
+.sections-form.error small{
+    visibility: visible;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 100%;
+      padding-bottom: 40px;
+    }
+    .container h1{
+        color: white;
+        font-size: 60px;
+    } 
+    .container p{
+        color: #8C8C8C;
+        font-size: 30px;
+    }
+    .container-login input{
+        width: 80%;
+        padding: 24px 60px;
+        width: 100%;
+        font-size: 25px;
+       
+    }.container-login{
+        width: 60%;
+        margin: 10px auto;
+    }.container-login button{
+        width: 100%;
+       padding: 14px;
+       font-size: 30px;
+    
+   }.container-login svg{
+    width: 40px;
+    height: 40px;
+    color: #0677E8;
+    position: absolute;
+    left: 8px;
+    top: 17px;
+}.sections-form small{
+    color: red;
+    display: block;
+    letter-spacing: 2px;
+    visibility: hiddn;
+    padding-bottom: 14px;
+    font-size: 22px;
+}.container-login h4{
+    color: white;
+    font-size: 25px;
+
+}.container-login a{
+    font-size: 25px;
+    text-align: center;
+}
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+      padding-bottom: 40px;
+      margin: 0px auto;
+      padding-bottom: 100px;
+    }
+    .container h1{
+        color: white;
+        font-size: 50px;
+    } 
+    .container p{
+        color: #8C8C8C;
+        font-size: 20px;
+    }
+    .container-login input{
+        width: 80%;
+        padding: 20px 60px;
+        width: 100%;
+        font-size: 20px;
+        letter-spacing: 2px;
+       
+    }.container-login{
+        width: 100%;
+        margin: 0px auto;
+    }.container-login button{
+        width: 100%;
+       padding: 14px;
+       font-size: 24px;
+    
+   }.container-login svg{
+    width: 36px;
+    height: 36px;
+    color: #0677E8;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+}.sections-form small{
+    color: red;
+    display: block;
+    letter-spacing: 2px;
+    visibility: hidden;
+    padding-bottom: 14px;
+    font-size: 18px;
+}.container-login h4{
+    color: white;
+    font-size: 25px;
+
+}.container-login a{
+    font-size: 25px;
+    text-align: center;
+}
+}
+
